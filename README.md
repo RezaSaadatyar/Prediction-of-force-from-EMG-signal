@@ -2,7 +2,7 @@
 
 #### This repository includes the MATLAB codes of muscle force prediction from EMG using AR, LS, ARX models
 
-[(Further information)](https://github.com/RezaSaadatyar/Time-Series-Forecasting)**
+**[Further information](https://github.com/RezaSaadatyar/Time-Series-Forecasting)**
 
 ![Torque_Muscle   Least_square](https://user-images.githubusercontent.com/96347878/160926862-51b30668-daae-4ecf-9dc3-75f2067f0ad7.jpg)
 
