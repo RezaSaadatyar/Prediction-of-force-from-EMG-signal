@@ -1,4 +1,4 @@
-# EMG-force-Torque-estimation
+**EMG force Torque estimation**
 
 #### This repository includes the MATLAB codes of muscle force prediction from EMG using AR, LS, ARX models
 
