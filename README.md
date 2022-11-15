@@ -13,5 +13,6 @@
 
 ***
 **Python:**<br/>
+:arrow_forward: The program will run automatically when you run **code/file Main.py**, and you do not need to run any of the other codes. Depending on your goal, you can execute all steps independently or interdependently within the code/file main. In addition, you can copy and run each section along with its related files in your own code or disable each section with a **#**. To run the program, the only thing you need is your input, which is **data (data = Your data)**.
 ![Fig](https://user-images.githubusercontent.com/96347878/201977018-9289e1b5-f1c0-47b9-aeb7-c57c0f51f073.png)
 #### Reza.Saadatyar92@gmail.com
