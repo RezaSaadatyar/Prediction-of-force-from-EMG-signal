@@ -11,13 +11,15 @@ from sklearn import metrics
 def plot_models(data, y_train_pred, y_test_pred, axs, n_lag, train_size, num_sample, type_model):
     plt.rcParams.update({'font.size': 18})
 
-    if 'pandas' not in str(type(data)):  # Check type data
+    if 'DataFrame' not in str(type(data)):  # Check type data
         data = pd.DataFrame(data)
 
     if train_size - num_sample <= 0:
         i = 0
+        iii = 0.16
         axs[0].set_xticks([])
     else:
+        iii = 0.07
         i = train_size - num_sample
         axs[0].tick_params(axis='x', labelsize=16)
 
