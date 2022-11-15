@@ -56,7 +56,7 @@ train_size = int(len(data) * 0.8)
 sns.set(style='white')
 fig, axs = plt.subplots(nrows=4, ncols=1, sharey='row', figsize=(16, 10))
 plot_models(pd.DataFrame({'Torque': Filter_Torque, 'BB': BB, 'BR': BR, 'TBM': TBM, 'TBL': TBL}), [], [], axs, nLags, train_size, num_sample=num_sample, type_model='Actual_Data')
-# ================================= Step 5: Autoregressive and Automated Methods ===============================
+# ================================= Step 4: Autoregressive and Automated Methods ===============================
 # -------------------------------------------  Least Squares ---------------------------------------------------
 lest_squares(data, Data_Lags, train_size, axs, num_sample=num_sample)
 # -------------------------------------------- Auto-Regressive (AR) model --------------------------------------
@@ -65,7 +65,7 @@ ar(data, Data_Lags, train_size, axs, mu=mu, num_sample=num_sample)
 ar_ls(data, Data_Lags, train_size, axs, mu=mu, num_sample=num_sample)
 # ------------------------------------------------  ARX --------------------------------------------------------
 arx(data, Data_Lags, train_size, axs, mu=mu, num_sample=num_sample)
-# ======================================= Step 5: Machine Learning Models ======================================
+# ======================================= Step 4: Machine Learning Models ======================================
 # ------------------------------------------- Linear Regression Model  -----------------------------------------
 linear_regression(data, Data_Lags, train_size, axs, num_sample=num_sample)
 # ------------------------------------------ RandomForestRegressor Model ---------------------------------------
@@ -74,6 +74,7 @@ random_forest_regression(data, Data_Lags, train_size, axs, n_estimators=1000, ma
 tree_decision_regression(data, Data_Lags, train_size, axs, max_depth=3, num_sample=num_sample)
 # ---------------------------------------------- xgboost -------------------------------------------------------
 xgboost_regression(data, Data_Lags, train_size, axs, n_estimators=1000, num_sample=num_sample)
+# ========================================= Step 4: Deep Learning Models =======================================
 # -----------------------------------------------  LSTM model --------------------------------------------------
 train_x, train_y = sequences_data(np.array(data[:train_size]), nLags)  # Convert to a time series dimension:[samples, nLags, n_features]
 test_x, test_y = sequences_data(np.array(data[train_size:]), nLags)
