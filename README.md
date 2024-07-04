@@ -1,5 +1,4 @@
 **EMG force-Torque estimation**
-
 ***This repository includes the MATLAB & Python codes of muscle force prediction from EMG siganls using different models***<br>
 **[Further information](https://github.com/RezaSaadatyar/Time-Series-Forecasting)**
 
